@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
 import 'package:social_network/app/modules/login/login_page.dart';
+import 'package:social_network/app/modules/register/register_page.dart';
 
 class LoginFooter extends StatelessWidget {
   const LoginFooter({Key? key}) : super(key: key);
@@ -15,14 +16,14 @@ class LoginFooter extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Don\'t have an account?'),
+              const Text('Bạn có tài khoản chưa?'),
               GestureDetector(
                 onTap: () {
                   Navigator.of(context)
-                      .push(CupertinoPageRoute(builder: (_) => LoginPage()));
+                      .push(CupertinoPageRoute(builder: (_) => RegisterPage()));
                 },
                 child: const Text(
-                  ' Sign up',
+                  ' Đăng ký',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -35,7 +36,7 @@ class LoginFooter extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Also login with '),
+              const Text('Đăng nhập với'),
               GestureDetector(
                 onTap: () {},
                 child: const Text(

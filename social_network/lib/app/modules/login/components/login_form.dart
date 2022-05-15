@@ -49,7 +49,7 @@ class _LoginFormState extends State<LoginForm> {
                 border: InputBorder.none,
                 hintStyle: TextStyle(
                   color: blackColor,
-                  fontSize: 16,
+                  fontSize: 18,
                 )),
           ),
         ),
@@ -83,29 +83,29 @@ class _LoginFormState extends State<LoginForm> {
                   },
                   color: blackColor,
                 ),
-                hintText: 'Password',
+                hintText: 'Mật khẩu',
                 border: InputBorder.none,
                 hintStyle: const TextStyle(
                   color: blackColor,
-                  fontSize: 16,
+                  fontSize: 18,
                 )),
           ),
         ),
         Align(
           alignment: Alignment.centerRight,
           child: Padding(
-            padding: const EdgeInsets.only(right: 40.0, top: 10),
+            padding: const EdgeInsets.only(right: 20.0, top: 10),
             child: InkWell(
               onTap: () {},
               child: Container(
                 width: 130,
                 height: 40,
                 child: const Text(
-                  'Forgot Password?',
+                  'Quên mật khẩu?',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: blackColor,
-                    fontSize: 15,
+                    fontSize: 16,
                   ),
                 ),
               ),

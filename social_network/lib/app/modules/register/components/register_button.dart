@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
 
-class LoginButton extends StatefulWidget {
-  const LoginButton({Key? key}) : super(key: key);
+class RegisterButton extends StatefulWidget {
+  const RegisterButton({Key? key}) : super(key: key);
 
   @override
-  _LoginButtonState createState() => _LoginButtonState();
+  _RegisterButtonState createState() => _RegisterButtonState();
 }
 
-class _LoginButtonState extends State<LoginButton> {
+class _RegisterButtonState extends State<RegisterButton> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -24,7 +24,7 @@ class _LoginButtonState extends State<LoginButton> {
           ),
           child: const Center(
             child: Text(
-              'Đăng nhập',
+              'Đăng ký',
               style: TextStyle(
                 color: blackColor,
                 fontWeight: FontWeight.w700,
