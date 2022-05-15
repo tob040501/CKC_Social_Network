@@ -16,29 +16,29 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     var duration = const Duration(seconds: 3);
-    // Timer(
-    //     duration,
-    //     () => Navigator.pushReplacement(context,
-    //         MaterialPageRoute(builder: (context) => const LoginPage())));
+    Timer(
+        duration,
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => LoginPage())));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            //decoration: const BoxDecoration(color: backgroundColor),
+            decoration: const BoxDecoration(color: backgroundColor),
             child: Center(
                 child: Column(
-      children: [
-        Expanded(
-          flex: 2,
-          child: Image.asset(
-            'assets/images/hihi.jpg',
-            color: Colors.white,
-            height: 100,
-          ),
-        ),
-      ],
-    ))));
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: Image.asset(
+                    'assets/images/hihi.jpg',
+                    //color: Colors.white,
+                    height: 100,
+                  ),
+                ),
+              ],
+            ))));
   }
 }

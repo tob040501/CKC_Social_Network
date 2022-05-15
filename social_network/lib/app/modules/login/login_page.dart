@@ -1,17 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
+import 'package:social_network/app/core/values/images.dart';
+import 'package:social_network/app/modules/login/components/login_button.dart';
+import 'package:social_network/app/modules/login/components/login_footer.dart';
+import 'package:social_network/app/modules/login/components/login_form.dart';
 import 'package:social_network/app/modules/login/components/login_header.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  LoginPage({
+    Key? key,
+  }) : super(key: key);
+  TextEditingController _email = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      body: SingleChildScrollView(
+      body: Center(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          LoginHeader(),
+          Container(
+            height: 300,
+            decoration: const BoxDecoration(
+                borderRadius:
+                    BorderRadius.only(bottomLeft: Radius.circular(90)),
+                color: miniColor),
+            child: Center(child: Image.asset(logo)),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          const LoginForm(),
+          const SizedBox(
+            height: 5,
+          ),
+          const LoginButton(),
+          const SizedBox(
+            height: 15,
+          ),
+          const LoginFooter(),
         ]),
       ),
     );
