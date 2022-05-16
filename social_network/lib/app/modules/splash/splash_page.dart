@@ -33,8 +33,8 @@ class _SplashPageState extends State<SplashPage> {
                 Expanded(
                   flex: 2,
                   child: Image.asset(
-                    'assets/images/hihi.jpg',
-                    //color: Colors.white,
+                    logo,
+                    width: 100,
                     height: 100,
                   ),
                 ),

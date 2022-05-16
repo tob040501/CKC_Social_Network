@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
+import 'package:social_network/app/modules/dashboard/dashboard_page.dart';
 
 class LoginButton extends StatefulWidget {
   const LoginButton({Key? key}) : super(key: key);
@@ -13,7 +14,13 @@ class _LoginButtonState extends State<LoginButton> {
   Widget build(BuildContext context) {
     return Center(
       child: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => DashboardPage()),
+              ModalRoute.withName('/'));
+        },
         child: Container(
           width: 200,
           height: 50,

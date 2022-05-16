@@ -4,7 +4,6 @@ import 'package:social_network/app/core/values/images.dart';
 import 'package:social_network/app/modules/login/components/login_button.dart';
 import 'package:social_network/app/modules/login/components/login_footer.dart';
 import 'package:social_network/app/modules/login/components/login_form.dart';
-import 'package:social_network/app/modules/login/components/login_header.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({
@@ -24,7 +23,12 @@ class LoginPage extends StatelessWidget {
                 borderRadius:
                     BorderRadius.only(bottomLeft: Radius.circular(90)),
                 color: miniColor),
-            child: Center(child: Image.asset(logo)),
+            child: Center(
+                child: Image.asset(
+              logo,
+              width: 100,
+              height: 100,
+            )),
           ),
           const SizedBox(
             height: 50,
