@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
+import 'package:social_network/app/modules/forgot/forgot_password.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({
@@ -96,7 +98,10 @@ class _LoginFormState extends State<LoginForm> {
           child: Padding(
             padding: const EdgeInsets.only(right: 20.0, top: 10),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context)
+                    .push(CupertinoPageRoute(builder: (_) => ForgotPassword()));
+              },
               child: Container(
                 width: 130,
                 height: 40,
