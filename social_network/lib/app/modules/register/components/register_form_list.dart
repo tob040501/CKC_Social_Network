@@ -21,24 +21,6 @@ class RegisterFormList extends StatelessWidget {
       child: Column(
         children: [
           RegisterForm(
-              hintText: 'Họ',
-              icon: const Icon(
-                Icons.account_circle,
-                color: blackColor,
-              ),
-              isHideText: false,
-              isNumberText: false,
-              controller: controllerText[0]),
-          RegisterForm(
-              hintText: 'Tên',
-              icon: const Icon(
-                Icons.account_circle,
-                color: blackColor,
-              ),
-              isHideText: false,
-              isNumberText: false,
-              controller: controllerText[1]),
-          RegisterForm(
               hintText: 'Email',
               icon: const Icon(
                 Icons.email,
@@ -46,16 +28,7 @@ class RegisterFormList extends StatelessWidget {
               ),
               isHideText: false,
               isNumberText: false,
-              controller: controllerText[2]),
-          RegisterForm(
-              hintText: 'Số điện thoại',
-              icon: const Icon(
-                Icons.phone,
-                color: blackColor,
-              ),
-              isHideText: false,
-              isNumberText: true,
-              controller: controllerText[3]),
+              controller: controllerText[0]),
           RegisterForm(
               hintText: 'Mật khẩu',
               icon: const Icon(
@@ -64,7 +37,7 @@ class RegisterFormList extends StatelessWidget {
               ),
               isHideText: true,
               isNumberText: false,
-              controller: controllerText[4]),
+              controller: controllerText[1]),
           RegisterForm(
               hintText: 'Xác nhận mật khẩu',
               icon: const Icon(
@@ -73,7 +46,7 @@ class RegisterFormList extends StatelessWidget {
               ),
               isHideText: true,
               isNumberText: false,
-              controller: controllerText[5]),
+              controller: controllerText[3]),
           const SizedBox(
             height: 10,
           ),

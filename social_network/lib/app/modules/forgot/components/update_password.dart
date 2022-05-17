@@ -37,7 +37,7 @@ class UpdatePassword extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 60,
+                  height: 40,
                 ),
                 RegisterForm(
                     hintText: 'Mật khẩu',
