@@ -1,12 +1,22 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:provider/provider.dart';
 import 'package:social_network/app/core/values/colors.dart';
+import 'package:social_network/app/modules/login/components/login_google.dart';
 import 'package:social_network/app/modules/login/login_page.dart';
 import 'package:social_network/app/modules/register/register_page.dart';
 
-class LoginFooter extends StatelessWidget {
+class LoginFooter extends StatefulWidget {
   const LoginFooter({Key? key}) : super(key: key);
 
+  @override
+  _LoginFooterState createState() => _LoginFooterState();
+}
+
+class _LoginFooterState extends State<LoginFooter> {
+  @override
   @override
   Widget build(BuildContext context) {
     return Center(
