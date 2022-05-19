@@ -17,10 +17,10 @@ class _FriendsRequestButtonState extends State<FriendsRequestButton> {
           style: ElevatedButton.styleFrom(
             minimumSize: Size(100, 40),
           ),
-          child: Text('chấp nhận'),
+          child: Text('Chấp nhận'),
           onPressed: () {},
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         ElevatedButton(

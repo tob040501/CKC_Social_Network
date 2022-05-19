@@ -14,66 +14,66 @@ class _FriendsSuggestState extends State<FriendsSuggest> {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: [
+      children: const [
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),
         ),
         Card(
           child: SizedBox(
-            width: 350,
+            width: double.infinity,
             height: 100,
             child: Center(child: FriendsContent()),
           ),

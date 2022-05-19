@@ -16,8 +16,8 @@ class _FriendsPresentState extends State<FriendsPresent> {
       padding: EdgeInsets.zero,
       child: const Card(
         child: SizedBox(
-          width: 350,
-          height: 100,
+          width: double.infinity,
+          height: 60,
           child: FriendsPresentContent(),
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_network/app/core/values/colors.dart';
 import 'package:social_network/app/core/values/images.dart';
 import 'package:social_network/app/modules/Friends/Components/Friends_suggest/Friends_button.dart';
 
@@ -24,14 +25,21 @@ class _FriendsContentState extends State<FriendsContent> {
             backgroundImage: AssetImage(avatar),
           ),
           Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Nguyễn Thị Như Quỳnh'),
+              const Text(
+                'Nguyễn Thị Như Quỳnh',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: blackColor,
+                ),
+              ),
               const SizedBox(
                 height: 10,
               ),
               Container(
-                padding: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.all(0),
                 child: const FriendsButton(),
               ),
             ],

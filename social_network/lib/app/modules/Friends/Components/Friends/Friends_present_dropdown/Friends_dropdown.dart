@@ -10,7 +10,7 @@ class FriendsDropdown extends StatelessWidget {
         itemBuilder: (context) => [
           PopupMenuItem(
             child: Row(
-              children: [
+              children: const [
                 Icon(Icons.message_outlined),
                 SizedBox(
                   width: 10,
@@ -21,7 +21,7 @@ class FriendsDropdown extends StatelessWidget {
           ),
           PopupMenuItem(
             child: Row(
-              children: [
+              children: const [
                 Icon(Icons.person_remove_outlined),
                 SizedBox(
                   width: 10,
