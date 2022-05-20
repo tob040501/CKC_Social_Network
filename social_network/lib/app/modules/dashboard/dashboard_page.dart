@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:social_network/app/core/values/colors.dart';
 
 import 'package:social_network/app/core/values/images.dart';
+import 'package:social_network/app/modules/Friends/Friends_page.dart';
 import 'package:social_network/app/modules/home/components/home_page.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -18,7 +19,7 @@ class _DashboardPageState extends State<DashboardPage> {
   GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   final screens = [
     HomePage(),
-    Text('Friends'),
+    FriendsPage(),
     Text('Post'),
     Text('Me'),
     Text('Notification'),
